@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en" class="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MLJ Digital — Digital Products That Perform</title>
+    <meta name="description" content="Danish digital studio building websites, web apps and SaaS products for ambitious businesses. Bureau quality without bureau bills.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- GSAP for animations (optional, using vanilla CSS mostly but good for scroll reveals) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" defer></script>
+</head>
+<body>
+
+    <div class="noise"></div>
+    <div class="glow-bg">
+        <div class="grid-bg"></div>
+        <div class="glow glow-1"></div>
+        <div class="glow glow-2"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#top" class="logo">
+                <span class="logo-dot"></span> MLJ Digital
+            </a>
+            <div class="nav-links">
+                <a href="#work">Work</a>
+                <a href="#about">About</a>
+                <a href="#pricing">Pricing</a>
+            </div>
+            <a href="#contact" class="btn btn-primary nav-cta">Get a Quote</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="top" class="hero">
+        <div class="container hero-container">
+            <h1 class="hero-title fade-up" style="animation-delay: 0.1s;">
+                Apps & Websites <br> Built With Care.
+            </h1>
+            <p class="hero-subtitle fade-up" style="animation-delay: 0.2s;">
+                We design and develop digital products for ambitious businesses.<br>
+                From idea to launch — with focus on simplicity, quality and results<br>
+                you can feel.
+            </p>
+            <div class="hero-actions fade-up" style="animation-delay: 0.3s;">
+                <a href="#contact" class="btn btn-primary btn-large">Start a Conversation &rarr;</a>
+                <a href="#work" class="btn btn-secondary btn-large">See Our Work</a>
+            </div>
+        </div>
+        <div class="hero-cloud">
+            <img src="images/cloud.svg" alt="Cloud Graphic">
+        </div>
+    </section>
+
+    <!-- Work Section -->
+    <section id="work" class="work section">
+        <div class="container">
+            <div class="work-header reveal">
+                <div class="work-header-left">
+                    <span class="section-label">Selected Work</span>
+                    <h2 class="section-title">Projects We've <br>Delivered.</h2>
+                </div>
+                <p class="work-header-desc">A small selection of websites, web-apps and products we've designed and built for ambitious clients.</p>
+            </div>
+
+            <div class="work-grid">
+                <a href="https://www.sølbæk.dk" target="_blank" class="work-card reveal">
+                    <div class="wc-img-wrap">
+                        <div class="wc-visual" style="background-image: url('images/coach.png'); background-size: cover; background-position: center;"><div class="wi-shine"></div></div>
+                        <span class="wc-num">01</span>
+                    </div>
+                    <div class="wc-body">
+                        <div class="wi-tags">
+                            <span class="wi-tag">Branding</span>
+                            <span class="wi-tag">Web</span>
+                        </div>
+                        <h3>Coach & Consulting</h3>
+                        <p>Personal branding for executive coach Dennis Sølbæk Bjørngaard. Authority, conversion and clarity — with military background and EMCC certification as foundation.</p>
+                        <div class="wc-footer">
+                            <span class="wc-link">View project</span>
+                            <div class="wi-arrow">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M7 7h10v10"/></svg>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="https://facilityflow.dk" target="_blank" class="work-card reveal" style="transition-delay: 0.1s;">
+                    <div class="wc-img-wrap">
+                        <div class="wc-visual" style="background-image: url('images/facility.png'); background-size: cover; background-position: center;"><div class="wi-shine"></div></div>
+                        <span class="wc-num">02</span>
+                    </div>
+                    <div class="wc-body">
+                        <div class="wi-tags">
+                            <span class="wi-tag">Web App</span>
+                            <span class="wi-tag">SaaS</span>
+                        </div>
+                        <h3>Facility Management</h3>
+                        <p>QR-based error reporting and task management for field teams. Built for technicians in the field and overview at the office — from report to resolved task.</p>
+                        <div class="wc-footer">
+                            <span class="wc-link">View project</span>
+                            <div class="wi-arrow">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M7 7h10v10"/></svg>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="https://vincula.dk" target="_blank" class="work-card reveal" style="transition-delay: 0.2s;">
+                    <div class="wc-img-wrap">
+                        <div class="wc-visual" style="background-image: url('images/event.png'); background-size: cover; background-position: center;"><div class="wi-shine"></div></div>
+                        <span class="wc-num">03</span>
+                    </div>
+                    <div class="wc-body">
+                        <div class="wi-tags">
+                            <span class="wi-tag">Platform</span>
+                            <span class="wi-tag">Events</span>
+                        </div>
+                        <h3>Event & Planning</h3>
+                        <p>Planning platform for weddings and events. Guest list, budget and all details in one place — stress-free for Danish couples.</p>
+                        <div class="wc-footer">
+                            <span class="wc-link">View project</span>
+                            <div class="wi-arrow">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M7 7h10v10"/></svg>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="https://okes.dk" target="_blank" class="work-card reveal" style="transition-delay: 0.3s;">
+                    <div class="wc-img-wrap">
+                        <div class="wc-visual" style="background-image: url('images/energy.png'); background-size: cover; background-position: center;"><div class="wi-shine"></div></div>
+                        <span class="wc-num">04</span>
+                    </div>
+                    <div class="wc-body">
+                        <div class="wi-tags">
+                            <span class="wi-tag">Consulting</span>
+                            <span class="wi-tag">Web</span>
+                        </div>
+                        <h3>Energy Consulting</h3>
+                        <p>Website for OKES ApS — energy optimization, ESG reporting and sustainable transition. 27,000+ MWh savings documented.</p>
+                        <div class="wc-footer">
+                            <span class="wc-link">View project</span>
+                            <div class="wi-arrow">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M7 7h10v10"/></svg>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section (Editorial Dark) -->
+    <section id="about" class="about section">
+        <div class="about-glow-1"></div>
+        <div class="about-glow-2"></div>
+        <div class="about-glow-3"></div>
+        <div class="container">
+
+            <!-- Header Row -->
+            <div class="about-header-row reveal">
+                <div class="about-header-left">
+                    <span class="section-label about-label">About MLJ Digital</span>
+                    <h2 class="about-headline">A Small Studio<br><span class="about-headline-em">With Big Ambitions.</span></h2>
+                </div>
+                <div class="about-header-right">
+                    <p class="about-desc">MLJ Digital is a Danish studio building digital products with craftmanship. We believe in fewer middlemen, sharper decisions and closer collaboration — from first sketch to launched product.</p>
+                    <div class="about-chips">
+                        <div class="about-chip">
+                            <span class="chip-num">4+</span>
+                            <span class="chip-lbl">Products built</span>
+                        </div>
+                        <div class="about-chip">
+                            <span class="chip-num">24h</span>
+                            <span class="chip-lbl">Response time</span>
+                        </div>
+                        <div class="about-chip">
+                            <span class="chip-num">DK</span>
+                            <span class="chip-lbl">Denmark-based</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Values List -->
+            <div class="values-list">
+                <div class="value-row reveal">
+                    <span class="value-num">01</span>
+                    <div class="value-body">
+                        <h4>Close Dialogue</h4>
+                        <p>You work directly with the people who design and build. No layers of interpretation, no long email threads — just clear communication and quick decisions.</p>
+                    </div>
+                    <div class="value-img" style="background-image: url('images/close.svg'); background-size: contain; background-position: right center; background-repeat: no-repeat; width: 120px; height: 120px;"></div>
+                </div>
+
+                <div class="value-row reveal" style="transition-delay: 0.1s;">
+                    <span class="value-num">02</span>
+                    <div class="value-body">
+                        <h4>Fixed Price</h4>
+                        <p>We agree on scope and price upfront. If anything changes along the way, we discuss it — you'll never receive a bill you didn't expect.</p>
+                    </div>
+                    <div class="value-img" style="background-image: url('images/fixed.svg'); background-size: contain; background-position: right center; background-repeat: no-repeat; width: 120px; height: 120px;"></div>
+                </div>
+
+                <div class="value-row reveal" style="transition-delay: 0.2s;">
+                    <span class="value-num">03</span>
+                    <div class="value-body">
+                        <h4>Quality You Can Feel</h4>
+                        <p>We deliver quickly, but never in a hurry. Modern stack, clean code, thoughtful design. It should still work in two years.</p>
+                    </div>
+                    <div class="value-img" style="background-image: url('images/quality.svg'); background-size: contain; background-position: right center; background-repeat: no-repeat; width: 120px; height: 120px;"></div>
+                </div>
+
+                <div class="value-row reveal" style="transition-delay: 0.3s;">
+                    <span class="value-num">04</span>
+                    <div class="value-body">
+                        <h4>Honest Advice</h4>
+                        <p>We say no to projects we can't stand behind — and we say yes if we believe there's a simpler path to your goal.</p>
+                    </div>
+                    <div class="value-img" style="background-image: url('images/honest.svg'); background-size: contain; background-position: right center; background-repeat: no-repeat; width: 120px; height: 120px;"></div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing section" style="position: relative;">
+        <div class="pricing-graphic" style="position: absolute; bottom: 0; left: 0; width: 100%; z-index: 0; pointer-events: none;">
+            <img src="images/pricing.svg" alt="" style="width: 100%; height: auto;">
+        </div>
+        <div class="container" style="position: relative; z-index: 1;">
+            <div class="section-header reveal">
+                <span class="section-label">Pricing</span>
+                <h2 class="section-title">Transparent Starting Prices.</h2>
+                <p class="section-desc">We believe quality shouldn't cost a fortune. Choose whether you want to own your website or pay monthly — both ways are honest and without hidden fees.</p>
+            </div>
+
+            <!-- One-time purchase -->
+            <div class="pricing-group reveal">
+                <div class="pg-header">
+                    <h3 class="pg-title">One-time purchase</h3>
+                    <p class="pg-sub">You own the website yourself</p>
+                </div>
+                <div class="pricing-grid">
+                    <div class="price-card">
+                        <div class="price-amount">2,500 kr</div>
+                        <div class="price-period">One-time</div>
+                        <h4 class="price-name">Mini</h4>
+                        <p class="price-desc">Simple one-pager. Perfect for coaches, associations and private projects. 1-2 weeks from start to launch.</p>
+                    </div>
+                    <div class="price-card">
+                        <div class="price-amount">4,500 kr</div>
+                        <div class="price-period">One-time</div>
+                        <h4 class="price-name">Starter</h4>
+                        <p class="price-desc">3-5 pages with contact form. For small businesses that need a professional outward appearance.</p>
+                    </div>
+                    <div class="price-card">
+                        <div class="price-amount">12,000 kr</div>
+                        <div class="price-period">One-time</div>
+                        <h4 class="price-name">Business</h4>
+                        <p class="price-desc">Professional website with multiple pages, CMS and SEO. For businesses that want more from their online presence.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Subscription -->
+            <div class="pricing-group pricing-group-sub reveal">
+                <div class="pricing-glow-1"></div>
+                <div class="pricing-glow-2"></div>
+                <div class="pg-header">
+                    <div class="pg-title-row">
+                        <h3 class="pg-title">Subscription <span class="pg-title-em">Plans</span></h3>
+                        <span class="pg-badge">Most Popular</span>
+                    </div>
+                    <p class="pg-sub">All included — the longer the commitment, the lower the price</p>
+                </div>
+                <div class="pricing-grid">
+                    <div class="price-card">
+                        <div class="price-amount">349 kr/mo</div>
+                        <div class="price-period">12 mo commitment</div>
+                        <h4 class="price-name">12 mo commitment</h4>
+                        <p class="price-desc">Shortest commitment. Everything included: hosting, domain, SSL, backup and ongoing updates.</p>
+                    </div>
+                    <div class="price-card">
+                        <div class="price-amount">249 kr/mo</div>
+                        <div class="price-period">24 mo commitment</div>
+                        <h4 class="price-name">24 mo commitment</h4>
+                        <p class="price-desc">The balanced solution. Same all-inclusive package, lower monthly price with a bit longer commitment.</p>
+                    </div>
+                    <div class="price-card">
+                        <div class="price-amount">199 kr/mo</div>
+                        <div class="price-period">36 mo commitment</div>
+                        <h4 class="price-name">36 mo commitment</h4>
+                        <p class="price-desc">Lowest monthly price. Perfect for those who know they want a website that just works year after year.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footnote -->
+            <div class="pricing-footnote reveal">
+                <p>Extra changes beyond subscription: 495 DKK/hr</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+        <div class="contact-bg-graphic">
+            <img src="images/footer.svg" alt="">
+        </div>
+        <div class="container contact-container reveal">
+            <div class="contact-content">
+                <span class="section-label">Let's Talk</span>
+                <h2 class="section-title">Have a Project We Should Build?</h2>
+                <p class="section-desc">Tell us briefly what you have in mind — whether it's a new website, an app or just an idea you want to bounce off. We'll get back to you within 24 hours.</p>
+                <a href="mailto:hej@mljdigital.dk" class="contact-email">
+                    <div class="mail-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                    </div>
+                    hej@mljdigital.dk
+                </a>
+            </div>
+            
+            <div class="contact-form-wrapper">
+                <form class="contact-form" onsubmit="event.preventDefault();">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" placeholder="Enter your name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Project Description</label>
+                        <textarea id="message" rows="4" placeholder="Tell us about your project..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <a href="#top" class="logo">
+                        <span class="logo-dot"></span> MLJ Digital
+                    </a>
+                    <p>Digital products, built with care.</p>
+                    <a href="mailto:hej@mljdigital.dk" class="footer-mail">hej@mljdigital.dk</a>
+                </div>
+                <div class="footer-links-group">
+                    <div class="footer-col">
+                        <h4>Navigation</h4>
+                        <a href="#work">Work</a>
+                        <a href="#about">About</a>
+                        <a href="#pricing">Pricing</a>
+                        <a href="#contact">Contact</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Legal</h4>
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                        <a href="#">Cookies</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <script>document.write(new Date().getFullYear())</script> MLJ Digital. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script for simple animations -->
+    <script>
+        // Simple Intersection Observer for reveal animations without GSAP
+        document.addEventListener('DOMContentLoaded', () => {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('active');
+                    }
+                });
+            }, {
+                threshold: 0.1,
+                rootMargin: "0px 0px -50px 0px"
+            });
+
+            document.querySelectorAll('.reveal').forEach((el) => {
+                observer.observe(el);
+            });
+            
+            // Smooth scroll for nav links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>
