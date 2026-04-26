@@ -732,6 +732,78 @@ h1, h2, h3, h4, h5, h6 {
 
 
 
+/* Team Section */
+.team {
+    background: var(--bg-subtle);
+    position: relative;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 56px;
+}
+
+.team-card {
+    background: transparent;
+    border: none;
+    border-radius: 32px;
+    padding: 48px 40px 44px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: var(--transition);
+}
+
+.team-card:hover {
+    transform: translateY(-8px);
+}
+
+.tc-photo-wrap {
+    width: 500px;
+    height: 500px;
+    border-radius: 20px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.tc-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+    transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+    display: block;
+}
+
+.team-card:hover .tc-photo {
+    transform: scale(1.05);
+}
+
+.tc-info {
+    margin-top: 32px;
+    padding-top: 28px;
+    border-top: 1px solid var(--border);
+    width: 100%;
+}
+
+.tc-name {
+    font-size: 1.35rem;
+    font-weight: 800;
+    color: var(--primary);
+    letter-spacing: -0.03em;
+    margin-bottom: 8px;
+}
+
+.tc-role {
+    font-size: 0.78rem;
+    font-weight: 700;
+    color: var(--text-tertiary);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
 /* Pricing Groups */
 .pricing-group { margin-bottom: 40px; }
 
@@ -1004,6 +1076,8 @@ h1, h2, h3, h4, h5, h6 {
     .pricing-group-sub { padding: 28px; }
     .contact-container { grid-template-columns: 1fr; padding: 48px 32px; border-radius: 32px; }
     .contact-content { text-align: center; }
+    .team-grid { gap: 36px; }
+    .tc-photo-wrap { width: 360px; height: 360px; }
 }
 
 @media (max-width: 768px) {
@@ -1014,6 +1088,9 @@ h1, h2, h3, h4, h5, h6 {
     .btn-large { width: 100%; }
     .work-grid { grid-template-columns: 1fr; }
     .wc-img-wrap { height: 200px; }
+    .team-grid { grid-template-columns: 1fr; max-width: 520px; margin: 0 auto; }
+    .team-card { padding: 32px 24px 28px; }
+    .tc-photo-wrap { width: 100%; height: 340px; }
     .value-row { grid-template-columns: 56px 1fr; gap: 24px; }
     .value-img { display: none; }
     .about-chips { flex-direction: column; gap: 12px; }
