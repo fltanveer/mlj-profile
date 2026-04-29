@@ -40,8 +40,19 @@
                 <a href="#pricing">Pricing</a>
             </div>
             <a href="#contact" class="btn btn-primary nav-cta">Get a Quote</a>
+            <button class="mobile-menu-btn" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+            </button>
         </div>
     </nav>
+    <div class="mobile-menu">
+        <a href="#work">Work</a>
+        <a href="#about">About</a>
+        <a href="#team">Team</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#contact" class="btn btn-primary">Get a Quote</a>
+    </div>
 
     <!-- Hero Section -->
     <section id="top" class="hero">
@@ -423,7 +434,6 @@
 
     <!-- Script for simple animations -->
     <script>
-        // Simple Intersection Observer for reveal animations without GSAP
         document.addEventListener('DOMContentLoaded', () => {
             const observer = new IntersectionObserver((entries) => {
                 entries.forEach((entry) => {
@@ -449,6 +459,27 @@
                     });
                 });
             });
+
+            // Mobile menu toggle
+            const menuBtn = document.querySelector('.mobile-menu-btn');
+            const mobileMenu = document.querySelector('.mobile-menu');
+            
+            if (menuBtn && mobileMenu) {
+                menuBtn.addEventListener('click', () => {
+                    menuBtn.classList.toggle('active');
+                    mobileMenu.classList.toggle('active');
+                    document.body.style.overflow = mobileMenu.classList.contains('active') ? 'hidden' : '';
+                });
+
+                // Close menu when clicking a link
+                mobileMenu.querySelectorAll('a').forEach(link => {
+                    link.addEventListener('click', () => {
+                        menuBtn.classList.remove('active');
+                        mobileMenu.classList.remove('active');
+                        document.body.style.overflow = '';
+                    });
+                });
+            }
         });
     </script>
 </body>

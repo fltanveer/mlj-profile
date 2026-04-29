@@ -305,19 +305,22 @@ h1, h2, h3, h4, h5, h6 {
     min-height: 100vh;
     text-align: center;
     overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: clamp(60px, 8vh, 120px);
+    padding-bottom: clamp(200px, 32vh, 380px);
 }
 
 .hero-container {
-    position: absolute;
-    top: 30%;
-    left: 50%;
-    transform: translateX(-50%);
+    position: relative;
     width: 100%;
     max-width: 960px;
     display: flex;
     flex-direction: column;
     align-items: center;
     z-index: 1;
+    padding: 0 24px;
 }
 
 .hero-title {
@@ -1078,15 +1081,97 @@ h1, h2, h3, h4, h5, h6 {
     .contact-content { text-align: center; }
     .team-grid { gap: 36px; }
     .tc-photo-wrap { width: 360px; height: 360px; }
+    .hero { padding-bottom: clamp(140px, 20vh, 220px); }
+    .hero-cloud img { height: 38vh; width: 100%; object-fit: cover; object-position: top center; }
+}
+
+/* Mobile Menu Button */
+.mobile-menu-btn {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    gap: 6px;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    z-index: 101;
+}
+
+.mobile-menu-btn span {
+    display: block;
+    width: 24px;
+    height: 2px;
+    background: var(--primary);
+    border-radius: 2px;
+    transition: var(--transition);
+}
+
+.mobile-menu-btn.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 6px);
+}
+
+.mobile-menu-btn.active span:nth-child(2) {
+    transform: rotate(-45deg) translate(5px, -6px);
+}
+
+.mobile-menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(252, 252, 253, 0.98);
+    backdrop-filter: blur(20px);
+    z-index: 99;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+    opacity: 0;
+    pointer-events: none;
+    transition: var(--transition);
+}
+
+.mobile-menu.active {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.mobile-menu a {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--primary);
+    text-decoration: none;
+}
+
+.mobile-menu .btn {
+    margin-top: 16px;
+}
+
+@media (max-width: 1024px) {
+    .nav-links, .nav-cta { display: none; }
+    .mobile-menu-btn { display: flex; }
+    .mobile-menu { display: flex; }
 }
 
 @media (max-width: 768px) {
+    :root {
+        --section-py: 100px;
+    }
     .navbar { top: 16px; width: calc(100% - 32px); }
-    .nav-links, .nav-cta { display: none; }
-    .hero-title { font-size: 2.8rem; }
+    .hero { padding-bottom: clamp(100px, 16vh, 160px); padding-top: 0; }
+    .hero-title { font-size: 2.5rem; }
+    .hero-subtitle { font-size: 1rem; }
     .hero-actions { flex-direction: column; width: 100%; }
     .btn-large { width: 100%; }
+    .hero-cloud { bottom: -2px; }
     .work-grid { grid-template-columns: 1fr; }
+    .work-header { margin-bottom: 48px; }
+    .section-header { margin-bottom: 48px; }
     .wc-img-wrap { height: 200px; }
     .team-grid { grid-template-columns: 1fr; max-width: 520px; margin: 0 auto; }
     .team-card { padding: 32px 24px 28px; }
@@ -1095,6 +1180,24 @@ h1, h2, h3, h4, h5, h6 {
     .value-img { display: none; }
     .about-chips { flex-direction: column; gap: 12px; }
     .about-chip { padding: 20px; }
-    .footer-top { flex-direction: column; gap: 64px; }
-    .footer-links-group { flex-direction: column; gap: 48px; }
+    .about-header-row { margin-bottom: 48px; }
+    .pricing-group-sub { padding: 32px 24px; }
+    .contact-container { padding: 40px 24px; gap: 40px; }
+    .contact-form-wrapper { padding: 32px 24px; }
+    .contact-email { font-size: 1.25rem; }
+    .footer { padding: 60px 0 32px; }
+    .footer-top { flex-direction: column; gap: 48px; margin-bottom: 48px; }
+    .footer-links-group { flex-direction: column; gap: 32px; }
+}
+
+@media (max-width: 480px) {
+    .container { padding: 0 20px; }
+    .hero-title { font-size: 2rem; }
+    .hero-subtitle br { display: none; }
+    .hero-subtitle { font-size: 0.95rem; }
+    .section-title { font-size: 2rem; }
+    .wc-body { padding: 24px; }
+    .about-headline { font-size: 2rem; }
+    .value-row { padding: 32px 0; }
+    .price-card { padding: 24px 20px; }
 }
